@@ -1,0 +1,44 @@
+#logo {
+    position:absolute;
+    z-index:300000;
+    bottom:150px;
+    left:125px;
+    text-align:center;
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h2 {
+    font-family: "Comic Sans" ;
+    color: grey;
+    background: rgba(0, 0, 0, 0.233);
+    text-align: center;
+}
+
+#startButton {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    background-position: 40%;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.forward {
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 95%;
+}
+
+.forward:hover {
+    font-size: 125%;
+}

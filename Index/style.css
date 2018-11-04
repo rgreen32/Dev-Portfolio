@@ -1,0 +1,21 @@
+body, html{
+    min-height: 100%;
+    margin: 0;
+}
+
+h1{
+    font-size: 100px;
+    color: wheat;
+    text-align: center;
+
+}
+.bg{
+    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+
+}
+
