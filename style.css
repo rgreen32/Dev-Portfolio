@@ -4,6 +4,9 @@ body, html{
 }
 
 .container{
+    background-image: url("thumbnails/tictactoeThumbnail.png");
+    background-repeat:no-repeat;
+    background-size: 300px 199px;
     display: inline-block;
     width: 300px;
     height: 200px;
