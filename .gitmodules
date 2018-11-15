@@ -1,3 +1,6 @@
 [submodule "javascript-project-tictactoe-rey-devyn"]
 	path = javascript-project-tictactoe-rey-devyn
 	url = https://github.com/cs-fullstack-fall-2018/javascript-project-tictactoe-rey-devyn.git
+[submodule "javascript-project-cards-royzell-and-ray"]
+	path = javascript-project-cards-royzell-and-ray
+	url = https://github.com/cs-fullstack-fall-2018/javascript-project-cards-royzell-and-ray.git
