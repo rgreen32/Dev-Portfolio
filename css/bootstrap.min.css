@@ -212,7 +212,7 @@ td, th {
         content: " (" attr(title) ")"
     }
 
-    a[href^="javascript:"]:after, a[href^="#"]:after {
+    a[href^="javascript:"]:after, a[href^=""]:after {
         content: ""
     }
 
