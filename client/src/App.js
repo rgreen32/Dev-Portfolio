@@ -119,7 +119,7 @@ function App() {
             <div style={{ maxWidth: "75%" }} className="my-4">
               <h6 style={{ "line-height": "2.0" }}>
                 My name is Ray Green. I am a full-stack web developer currently
-                employed at Green Mountain Technology. I have a passion for
+                employed at Green Mountain Technology in Memphis, TN. I have a passion for
                 creating and exploring what is possible through technology. I
                 specialize in web application development, website design, and
                 database normalization
