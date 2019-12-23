@@ -79,7 +79,12 @@ function App() {
           <Row className="mt-5">
             <Col>
               <h1 className="display-3">Hi, I'm Ray.</h1>
-              <img height="100px" width="100px" src={"./profile.png"} />
+              <img
+                className="animated zoomInDown"
+                height="100px"
+                width="100px"
+                src={"./profile.png"}
+              />
               <h1 className="display-3">I'm a web developer.</h1>
             </Col>
           </Row>
