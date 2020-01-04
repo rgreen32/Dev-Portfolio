@@ -18,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "scp -r build/* root@104.248.49.252:/var/www/html && scp ../utils/fetchResume.py root@104.248.49.252:/usr/lib/cgi-bin",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
