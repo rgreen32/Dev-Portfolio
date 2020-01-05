@@ -19,3 +19,6 @@ except Exception as e:
     print "Content-Type: text/plain;charset=utf-8"
     print
     print e
+
+
+#TODO: Must find way to convert this script to unix file format before scping it on deploy.
