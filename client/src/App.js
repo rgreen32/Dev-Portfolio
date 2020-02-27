@@ -22,6 +22,21 @@ function App() {
   const toggle = () => setIsOpen(!isOpen)
   return (
     <>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            #logo {
+              transition: transform 0.2s;
+            }
+      
+            #logo:hover {
+              transform: scale(
+                1.2
+              ); 
+            }
+    `
+        }}
+      />
       <Navbar color="dark" dark expand="md">
         <NavbarBrand href="/">
           <img height="50px" width="100px" src={"./logo.png"} />
@@ -35,8 +50,22 @@ function App() {
             <NavItem>
               <NavLink href="#contact">Contact</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="https://greenboy.io/">
+                <img
+                  id="logo"
+                  src="./logo2.png"
+                  style={{
+                    display: "inline-block",
+                    width: "27px",
+                    height: "27px",
+                    marginLeft: "2px"
+                  }}
+                ></img>
+                reenboy.io
+              </NavLink>
+            </NavItem>
           </Nav>
-          {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
       <style>
@@ -64,7 +93,35 @@ function App() {
            color: inherit; 
             text-decoration:none; 
 
-          }`}
+          }
+
+          @media only screen and (max-width: 760) {
+            #intro {
+              color: #909090
+            }
+          }
+
+          @media only screen and (max-width: 1070px) {
+            #about {
+              font-size: .9em;
+              line-height:1.3;
+            }
+          }
+
+          @media only screen and (max-width: 800px) {
+            #about {
+              font-size: .9em;
+              line-height:1.1;
+            }
+          }
+          
+          @media only screen and (max-width: 600px) {
+            #about {
+              font-size: .8em;
+              line-height:.3
+            }
+          }
+          `}
       </style>
 
       <Jumbotron
@@ -76,7 +133,7 @@ function App() {
             "font-family": "Tahoma"
           }}
         >
-          <Row className="mt-5">
+          <Row id="intro" className="mt-5">
             <Col>
               <h1 className="display-3">Hi, I'm Ray.</h1>
               <img
@@ -119,15 +176,29 @@ function App() {
         style={{ "background-color": "grey", "border-radius": "0" }}
       >
         <Row>
-          <Col align="center">
+          <Col style={{ maxHeight: "300px" }} align="center">
             <h1>About Me</h1>
-            <div style={{ maxWidth: "75%" }} className="my-4">
-              <h6 style={{ "line-height": "2.0" }}>
+            <div
+              style={{
+                maxWidth: "75%",
+                maxHeight: "300px"
+              }}
+              className="my-4"
+            >
+              <h6
+                id="about"
+                style={{
+                  fontSize: "1em",
+                  "line-height": "1.7",
+                  overflow: "hidden"
+                }}
+              >
                 My name is Ray Green. I am a full-stack web developer currently
-                employed at Green Mountain Technology in Memphis, TN. I have a passion for
-                creating and exploring what is possible through technology. I
-                specialize in web application development, website design, and
-                database normalization
+                employed at Green Mountain Technology in Memphis, TN. I have a
+                passion for creating unique and interactive experiences on the
+                web. I try to push the boundaries of my work wherever and
+                whenever possible. I specialize in distributed web application
+                development, website design, and database normalization
                 <br />
                 Let's work together.
                 <br />
@@ -259,10 +330,10 @@ function App() {
       >
         <Row>
           <Col>
-            <h1>Contact Me</h1>
+            {/* <h1>Contact Me</h1> */}
             <Row className="mt-4 mb-2">
               <Col>
-                <span>
+                {/* <span>
                   <h5
                     className="mx-5"
                     style={{
@@ -279,7 +350,7 @@ function App() {
                   >
                     Phone: (901) 672-2982
                   </h5>
-                </span>
+                </span> */}
               </Col>
             </Row>
             <Row>
